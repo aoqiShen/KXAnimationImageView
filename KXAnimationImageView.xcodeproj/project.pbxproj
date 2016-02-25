@@ -15,6 +15,10 @@
 		DCB3A22D1C7D7818000AFCC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB3A22B1C7D7818000AFCC8 /* LaunchScreen.storyboard */; };
 		DCB3A2381C7D7818000AFCC8 /* KXAnimationImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB3A2371C7D7818000AFCC8 /* KXAnimationImageViewTests.m */; };
 		DCB3A2431C7D7818000AFCC8 /* KXAnimationImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB3A2421C7D7818000AFCC8 /* KXAnimationImageViewUITests.m */; };
+		DCB3A2521C7D7845000AFCC8 /* KXAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB3A2511C7D7845000AFCC8 /* KXAnimationImageView.m */; settings = {ASSET_TAGS = (); }; };
+		DCB3A2551C7D79E5000AFCC8 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCB3A2541C7D79E5000AFCC8 /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
+		DCB3A2571C7D79F3000AFCC8 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCB3A2561C7D79F3000AFCC8 /* 2.jpg */; settings = {ASSET_TAGS = (); }; };
+		DCB3A2591C7D7A02000AFCC8 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCB3A2581C7D7A02000AFCC8 /* 3.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		DCB3A23E1C7D7818000AFCC8 /* KXAnimationImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KXAnimationImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB3A2421C7D7818000AFCC8 /* KXAnimationImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KXAnimationImageViewUITests.m; sourceTree = "<group>"; };
 		DCB3A2441C7D7818000AFCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB3A2501C7D7845000AFCC8 /* KXAnimationImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXAnimationImageView.h; sourceTree = "<group>"; };
+		DCB3A2511C7D7845000AFCC8 /* KXAnimationImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXAnimationImageView.m; sourceTree = "<group>"; };
+		DCB3A2541C7D79E5000AFCC8 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../../../../../Downloads/1.jpg; sourceTree = "<group>"; };
+		DCB3A2561C7D79F3000AFCC8 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = ../../LGSublimationView/Example/images/2.jpg; sourceTree = "<group>"; };
+		DCB3A2581C7D7A02000AFCC8 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = ../../../../../Downloads/3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		DCB3A21C1C7D7817000AFCC8 /* KXAnimationImageView */ = {
 			isa = PBXGroup;
 			children = (
+				DCB3A2531C7D7855000AFCC8 /* Image */,
 				DCB3A2201C7D7817000AFCC8 /* AppDelegate.h */,
 				DCB3A2211C7D7817000AFCC8 /* AppDelegate.m */,
 				DCB3A2231C7D7817000AFCC8 /* ViewController.h */,
@@ -110,6 +120,8 @@
 				DCB3A22B1C7D7818000AFCC8 /* LaunchScreen.storyboard */,
 				DCB3A22E1C7D7818000AFCC8 /* Info.plist */,
 				DCB3A21D1C7D7817000AFCC8 /* Supporting Files */,
+				DCB3A2501C7D7845000AFCC8 /* KXAnimationImageView.h */,
+				DCB3A2511C7D7845000AFCC8 /* KXAnimationImageView.m */,
 			);
 			path = KXAnimationImageView;
 			sourceTree = "<group>";
@@ -138,6 +150,16 @@
 				DCB3A2441C7D7818000AFCC8 /* Info.plist */,
 			);
 			path = KXAnimationImageViewUITests;
+			sourceTree = "<group>";
+		};
+		DCB3A2531C7D7855000AFCC8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DCB3A2581C7D7A02000AFCC8 /* 3.jpg */,
+				DCB3A2561C7D79F3000AFCC8 /* 2.jpg */,
+				DCB3A2541C7D79E5000AFCC8 /* 1.jpg */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB3A22D1C7D7818000AFCC8 /* LaunchScreen.storyboard in Resources */,
+				DCB3A2551C7D79E5000AFCC8 /* 1.jpg in Resources */,
+				DCB3A2571C7D79F3000AFCC8 /* 2.jpg in Resources */,
+				DCB3A2591C7D7A02000AFCC8 /* 3.jpg in Resources */,
 				DCB3A22A1C7D7818000AFCC8 /* Assets.xcassets in Resources */,
 				DCB3A2281C7D7818000AFCC8 /* Main.storyboard in Resources */,
 			);
@@ -275,6 +300,7 @@
 			files = (
 				DCB3A2251C7D7817000AFCC8 /* ViewController.m in Sources */,
 				DCB3A2221C7D7817000AFCC8 /* AppDelegate.m in Sources */,
+				DCB3A2521C7D7845000AFCC8 /* KXAnimationImageView.m in Sources */,
 				DCB3A21F1C7D7817000AFCC8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

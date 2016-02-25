@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "KXAnimationImageView.h"
 @interface ViewController : UIViewController
-
+@property (strong,nonatomic) KXAnimationImageView *kxView;
 
 @end
 
