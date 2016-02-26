@@ -31,7 +31,10 @@
         }
         
         [self addSubview:_image];
+        
         _state = KXAnimationImagesVIewStateStoped;
+        _preOrNext = KXAnimationImagesVIewNextView;
+        
     }
     return self;
 }
@@ -79,11 +82,21 @@
         [_time invalidate];
         return;
     }
-    _currentIndex = _currentIndex +1;
-//    index为0开始 当等于image的Count的时候 相当于溢出
-    if (_currentIndex == [_animationImages count]) {
-        _currentIndex = 0 ;
+    if(_preOrNext == KXAnimationImagesVIewNextView){
+        _currentIndex = _currentIndex +1;
+        //    index为0开始 当等于image的Count的时候 相当于溢出
+        if (_currentIndex == [_animationImages count]) {
+            _currentIndex = 0 ;
+        }
     }
+    else if(_preOrNext == KXAnimationImagesVIewPreView){
+        if (_currentIndex == 0 ) {
+            _currentIndex = [_animationImages count];
+        }
+        _currentIndex = _currentIndex - 1;
+        
+    }
+
     [self setCurrentImage];
     
 }
