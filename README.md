@@ -7,3 +7,5 @@
 ###整个运行操作为两种枚举startAnimating;stopAnimating.
 ###当图片进行轮询时 调用startAnimating 
 ###当图片停止轮询时 调用stopAnimating
+###当图片暂停的后下次运行时，图片轮询是继续上一次的图片进行轮询
+###本开发代码参考了网上一个前辈的设计 进行实现 非完全自创
