@@ -31,6 +31,7 @@
         }
         
         [self addSubview:_image];
+        _state = KXAnimationImagesVIewStateStoped;
     }
     return self;
 }

@@ -24,12 +24,12 @@
     self.kxView.animationImages = imageList;
     [self.kxView setCurrentImage];
     [self.view addSubview:self.kxView];
-    [self.kxView startAnimating];
+//    [self.kxView startAnimating];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(100, 50, 40, 30);
-    [btn setTitle:@"Test" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(animationImagesControl) forControlEvents:UIControlEventTouchUpInside];
+    btn.frame = CGRectMake(100, 50, 60, 30);
+    [btn setTitle:@"开始运行" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(animationImagesControl:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -39,15 +39,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)animationImagesControl{
+- (void)animationImagesControl:(id)sender{
+    UIButton *tmpBtn = sender;
     if ([self.kxView isAnimating]) {
-        
         [self.kxView stopAnimating];
+
+        [tmpBtn setTitle:@"开始运行" forState:UIControlStateNormal];
     }
     else{
         self.
         kxView.animationRepeatCount = 2;
         [self.kxView startAnimating];
+        [tmpBtn setTitle:@"停止运行" forState:UIControlStateNormal];
     }
 }
 
